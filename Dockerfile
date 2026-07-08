@@ -1,6 +1,7 @@
 FROM node:20-alpine
 WORKDIR /app
-RUN npm init -y && npm install express multer
+RUN npm init -y && npm install express
 COPY blog.js .
-EXPOSE 80
+ENV PORT=3000
+EXPOSE 3000
 CMD ["node", "blog.js"]
