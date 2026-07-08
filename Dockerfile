@@ -1,0 +1,6 @@
+FROM wordpress:6-apache
+ENV WORDPRESS_DB_HOST=localhost
+ENV WORDPRESS_DB_NAME=wordpress
+ENV WORDPRESS_DB_USER=wordpress
+ENV WORDPRESS_DB_PASSWORD=wordpress
+EXPOSE 80
